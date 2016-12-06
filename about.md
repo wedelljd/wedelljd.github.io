@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm here to show you some awesome things with data and machine learning
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
 ### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+p: 203-918-8484
+e: wedelljd@gmail.com
+[wedelljd@gmail.com](mailto:wedelljd@gmail.com)
