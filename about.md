@@ -10,6 +10,5 @@ I'm here to show you some awesome things with data and machine learning
 
 ### Contact me
 p: 203-918-8484
-  
-e: wedelljd@gmail.com
-[wedelljd@gmail.com](mailto:wedelljd@gmail.com)
+
+e: [wedelljd@gmail.com](mailto:wedelljd@gmail.com)
