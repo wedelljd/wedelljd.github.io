@@ -5,15 +5,12 @@ I recently looked into a dataset which lists all songs that made the Billboard T
 tracks each song from the date it entered up to 76 weeks afterwards (although no songs made it past 65 weeks).  
 
 The dataset is what I consider 'healthy'.  There are no missing values and the data doesn't appear corrupted in any way.  It does lack in metrics we want to use and explore, however, we are able to derive some of these datapoints from what we do have.  Fields I derived are:
-
-
     > Days to Peak
     > Peak Rank
     > Debut Month
     > Debut Quarter
     > Weeks in Top 100
-
-    *To see an explanation to how I derived these datapoints see the footer*
+        *To see an explanation to how I derived these datapoints see the footer*
 
 Using this data I've created some visualizations that show us hoe songs move through the Top 100 list over time and tell us when the most #1 hits debuted over the course of the year.  We'll also see how top rank relates to number of weeks in the top 100!
 
@@ -69,8 +66,13 @@ sns.distplot(top_10_billboard['days_to_peak'],bins=12, label="Peaked within Top 
 sns.distplot(top_51_thru_100['days_to_peak'], label="Peaked below Top 50",color='b')
 plt.xlabel("Days to Peak")
 plt.legend()
-#plt.show()
+plt.show()
+#plt.savefig('output.png', dpi=300)
 ```
+
+
+![png](billboard%20post_files/billboard%20post_6_0.png)
+
 
 The next thing we looked at was seasonality.  I was curious if there's an ideal time of year to debut on the list.  It turned out that in 2000 songs to reach the #1 spot on Billboard 100 debuted in the spring.
 
@@ -111,7 +113,7 @@ plt.figure(figsize=(30,12))
 
 #plot a line for each song that reached #1 and track it's progress over the weeks since entering
 for i in range(len(reached_rank_1)):
-    plt.plot(range(len(reached_rank_1.ix[0,week_column_list])),reached_rank_1.ix[:,week_column_list].values[i],label=str(reached_rank_1.ix[i,2])+" by "+str(reached_rank_1.ix[i,1]),linewidth=15,ls="--")
+    plt.plot(range(len(reached_rank_1.ix[0,week_column_list])),reached_rank_1.ix[:,week_column_list].values[i],label=str(reached_rank_1.ix[i,2])+" by "+str(reached_rank_1.ix[i,1]),linewidth=15,ls="--",dash_joinstyle="miter")
 
 plt.xticks(range((len(reached_rank_1.ix[0,week_column_list])-1))[10::10],reached_rank_1.columns[10::10],rotation=90,fontsize=30)
 plt.gca().invert_yaxis()
@@ -163,12 +165,30 @@ To create the debut month and quarter fields we take the quarter and month attib
 
     billboard["debut quarter"] = billboard["date.entered"].dt.quarter
     billboard["debut month"] = billboard["date.entered"].dt.month
-
+    
 To find the number of weeks a song was in the Top 100 we count the number of values within the weekly rank columns:
 
     billboard['weeks in top 100'] = billboard[list(billboard.ix[:,week_column_list].columns)].count(axis=1)
+    
+    
+
+
+```
+
+
+      File "<ipython-input-35-5961066ef753>", line 1
+        To derive the 'Days to Peak' field we first convert the 'date.entered' and 'date.peaked' fields to the datetime datatype.  Then we assign the day value of the difference between them to our new field:
+                ^
+    SyntaxError: invalid syntax
+    
 
 
 
+```python
+
+```
+
+
+```python
 
 ```
