@@ -33,7 +33,7 @@ sns.set_style("darkgrid")
 ```python
 billboard = pd.read_csv("./billboard.csv") #import data CSV
 ```
-
+<img src = "https://wedelljd.github.io/images/404.jpg">
 
 ```python
 week_column_list = list(billboard.columns[7:]) #sets up list to let me pick only weekly ranking data columns
