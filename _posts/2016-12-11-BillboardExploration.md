@@ -4,7 +4,7 @@
 I recently looked into a dataset which lists all songs that made the Billboard Top 100 list in the year 2000.  The data
 tracks each song from the date it entered up to 76 weeks afterwards (although no songs made it past 65 weeks).  
 
-The dataset is what I consider 'healthy'.  There are no missing values and the data doesn't appear corrupted in any way.  It does lack in metrics we want to use and explore, however, we are able to derive some of these datapoints from what we do have.  Fields I derived are:\n
+The dataset is what I consider 'healthy'.  There are no missing values and the data doesn't appear corrupted in any way.  It does lack in metrics we want to use and explore, however, we are able to derive some of these datapoints from what we do have.  Fields I derived are:/n
     > Days to Peak
     > Peak Rank
     > Debut Month
