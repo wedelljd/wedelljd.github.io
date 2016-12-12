@@ -2,7 +2,6 @@
 layout: post
 title: Billboard 100 Exploration
 ---
-## Billboard 100 Exploration
 
 I recently looked into a dataset which lists all songs that made the Billboard Top 100 list in the year 2000.  The data
 tracks each song from the date it entered up to 76 weeks afterwards (although no songs made it past 65 weeks).  
