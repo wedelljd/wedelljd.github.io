@@ -1,4 +1,7 @@
-
+---
+layout: post
+title: Frist Post!
+---
 ## Billboard 100 Exploration
 
 I recently looked into a dataset which lists all songs that made the Billboard Top 100 list in the year 2000.  The data
@@ -165,12 +168,12 @@ To create the debut month and quarter fields we take the quarter and month attib
 
     billboard["debut quarter"] = billboard["date.entered"].dt.quarter
     billboard["debut month"] = billboard["date.entered"].dt.month
-    
+
 To find the number of weeks a song was in the Top 100 we count the number of values within the weekly rank columns:
 
     billboard['weeks in top 100'] = billboard[list(billboard.ix[:,week_column_list].columns)].count(axis=1)
-    
-    
+
+
 
 
 ```
@@ -180,7 +183,7 @@ To find the number of weeks a song was in the Top 100 we count the number of val
         To derive the 'Days to Peak' field we first convert the 'date.entered' and 'date.peaked' fields to the datetime datatype.  Then we assign the day value of the difference between them to our new field:
                 ^
     SyntaxError: invalid syntax
-    
+
 
 
 
