@@ -33,7 +33,6 @@ sns.set_style("darkgrid")
 ```python
 billboard = pd.read_csv("./billboard.csv") #import data CSV
 ```
-<img src = "https://wedelljd.github.io/images/404.jpg">
 
 ```python
 week_column_list = list(billboard.columns[7:]) #sets up list to let me pick only weekly ranking data columns
@@ -58,6 +57,7 @@ For example, most songs that reach the Top 10 take at least 50 days to get there
 
 The following plot shows the distributions of Days to Peak for all songs in 2000, songs that reached the top 10, and songs that didn't break the Top 50.
 
+<img src = "https://wedelljd.github.io/images/Billboard100Post graphs/billboard post_6_0">
 
 ```python
 top_10_billboard = billboard[billboard["peak_rank"]<=10]
