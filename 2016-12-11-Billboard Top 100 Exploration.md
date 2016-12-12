@@ -34,7 +34,6 @@ sns.set_style("darkgrid")
 billboard = pd.read_csv("./billboard.csv") #import data CSV
 ```
 
-
 ```python
 week_column_list = list(billboard.columns[7:]) #sets up list to let me pick only weekly ranking data columns
 
@@ -58,6 +57,7 @@ For example, most songs that reach the Top 10 take at least 50 days to get there
 
 The following plot shows the distributions of Days to Peak for all songs in 2000, songs that reached the top 10, and songs that didn't break the Top 50.
 
+<img src = "https://wedelljd.github.io/images/billboard post_6_0.png">
 
 ```python
 top_10_billboard = billboard[billboard["peak_rank"]<=10]
@@ -73,7 +73,7 @@ plt.show()
 ```
 
 
-![png](billboard%20post_files/billboard%20post_6_0.png)
+
 
 
 The next thing we looked at was seasonality.  I was curious if there's an ideal time of year to debut on the list.  It turned out that in 2000 songs to reach the #1 spot on Billboard 100 debuted in the spring.
