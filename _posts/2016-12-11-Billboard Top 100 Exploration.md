@@ -73,7 +73,7 @@ plt.show()
 ```
 
 
-![png](billboard%20post_files/billboard%20post_6_0.png)
+
 
 
 The next thing we looked at was seasonality.  I was curious if there's an ideal time of year to debut on the list.  It turned out that in 2000 songs to reach the #1 spot on Billboard 100 debuted in the spring.
