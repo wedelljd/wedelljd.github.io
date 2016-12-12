@@ -71,8 +71,7 @@ plt.xlabel("Days to Peak")
 plt.legend()
 #plt.show()
 ```
-<img> src="https://github.com/wedelljd/wedelljd.github.io/blob/master/_posts/2016-12-11-BillboardExploration%20Images/my_graph.png"
-</img>
+
 The next thing we looked at was seasonality.  I was curious if there's an ideal time of year to debut on the list.  It turned out that in 2000 songs to reach the #1 spot on Billboard 100 debuted in the spring.
 
 
