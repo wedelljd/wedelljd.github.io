@@ -69,11 +69,11 @@ sns.distplot(top_10_billboard['days_to_peak'],bins=12, label="Peaked within Top 
 sns.distplot(top_51_thru_100['days_to_peak'], label="Peaked below Top 50",color='b')
 plt.xlabel("Days to Peak")
 plt.legend()
-plt.show()
+#plt.show()
 ```
 
 
-![png](billboard%20post_files/billboard%20post_6_0.png)
+![C:\Users\USER\wedelljd.github.io\_posts\2016-12-11-BillboardExploration Images\graph1.png]()
 
 
 The next thing we looked at was seasonality.  I was curious if there's an ideal time of year to debut on the list.  It turned out that in 2000 songs to reach the #1 spot on Billboard 100 debuted in the spring.
