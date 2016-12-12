@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frist Post!
+title: Billboard 100 Exploration
 ---
 ## Billboard 100 Exploration
 
