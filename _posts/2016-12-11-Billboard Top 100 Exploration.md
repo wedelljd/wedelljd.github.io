@@ -142,6 +142,11 @@ plt.gca().invert_yaxis()
 <img src="/images/Peak_Rank_vs_Weeks_In_Top_100.png.png" class="fit image">
 
 
+
+
+
+#Derived Fields
+
 To derive the 'Days to Peak' field we first convert the 'date.entered' and 'date.peaked' fields to the datetime datatype.  Then we assign the day value of the difference between them to our new field:
 
     #convert the date fields into datetime datatypes
