@@ -143,7 +143,7 @@ plt.show()
 ```
 
 
-![Days to Peak Distplot]({{ site.url }}https://github.com/wedelljd/wedelljd.github.io/images/Days_to_Peak_Distplot.png)
+![Days to Peak Distplot](https://github.com/wedelljd/wedelljd.github.io/tree/master/images/Days_to_Peak_Distplot.png)
 
 
 
