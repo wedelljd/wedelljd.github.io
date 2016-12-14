@@ -126,6 +126,8 @@ plt.legend(bbox_to_anchor=(1, 1), loc=2, borderaxespad=0,fontsize=30)
 
 
 The last thing I looked at was whether a song's top rank and longevity on the list have anything to do with each other.  What I found was rather striking.  Almost every song that lasted more than 20 weeks on the Billboard Top 100 peaked in the Top 20 rank.  The vertical threshold at 20 weeks is simultaneously eye-opening, and alarming.  On one hand, this could be valuable for someone in the music industry, and on the other it could signal that our data is corrupted some how.  It would be interesting to see if the 20 week threshold is an anomaly for the year 2000, or if it is a consistent relationship.
+
+
 ```python
 #does a song's top rank influence it's longevity on the Top 100?
 
@@ -136,7 +138,7 @@ plt.xlabel("Weeks in Top 100")
 plt.gca().invert_yaxis()
 ```
 
-
+<img src="/images/Peak_Rank_vs_Weeks_In_Top_100.png" class="fit image">
 
 
 To derive the 'Days to Peak' field we first convert the 'date.entered' and 'date.peaked' fields to the datetime datatype.  Then we assign the day value of the difference between them to our new field:
