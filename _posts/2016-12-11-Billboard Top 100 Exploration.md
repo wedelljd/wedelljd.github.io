@@ -136,9 +136,10 @@ plt.title("Peak Rank vs Weeks in Top 100")
 plt.ylabel("Peak Rank")
 plt.xlabel("Weeks in Top 100")
 plt.gca().invert_yaxis()
+
 ```
 
-<img src="/images/Peak_Rank_vs_Weeks_In_Top_100.png" class="fit image">
+<img src="/images/Peak_Rank_vs_Weeks_In_Top_100.png.png" class="fit image">
 
 
 To derive the 'Days to Peak' field we first convert the 'date.entered' and 'date.peaked' fields to the datetime datatype.  Then we assign the day value of the difference between them to our new field:
