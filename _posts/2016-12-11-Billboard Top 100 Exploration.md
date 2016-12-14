@@ -139,7 +139,7 @@ plt.gca().invert_yaxis()
 
 ```
 
-<img src="/images/Peak_Rank_vs_Weeks_In_Top_100.png.png" class="fit image">
+<img src="/images/Peak_Rank_vs_Weeks_In_Top_100.png" class="fit image">
 
 
 
