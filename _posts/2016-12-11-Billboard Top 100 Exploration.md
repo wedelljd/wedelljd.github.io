@@ -58,6 +58,7 @@ For example, most songs that reach the Top 10 take at least 50 days to get there
 
 The following plot shows the distributions of Days to Peak for all songs in 2000, songs that reached the top 10, and songs that didn't break the Top 50.
 
+<img src="https://github.com/wedelljd/wedelljd.github.io/blob/master/images/Days_to_Peak_Distplot.png">
 
 ```python
 top_10_billboard = billboard[billboard["peak_rank"]<=10]
