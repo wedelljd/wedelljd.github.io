@@ -100,7 +100,7 @@ plt.show()
 ```
 
 
-![png](billboard%20post_files/billboard%20post_8_0.png)
+![png](https://github.com/wedelljd/wedelljd.github.io/blob/master/images/Days_to_Peak_Distplot.png)
 
 
 
@@ -149,7 +149,7 @@ plt.show()
 
 
 
-```python
+
 To derive the 'Days to Peak' field we first convert the 'date.entered' and 'date.peaked' fields to the datetime datatype.  Then we assign the day value of the difference between them to our new field:
 
     #convert the date fields into datetime datatypes
@@ -172,26 +172,3 @@ To create the debut month and quarter fields we take the quarter and month attib
 To find the number of weeks a song was in the Top 100 we count the number of values within the weekly rank columns:
 
     billboard['weeks in top 100'] = billboard[list(billboard.ix[:,week_column_list].columns)].count(axis=1)
-
-
-
-
-```
-
-
-      File "<ipython-input-35-5961066ef753>", line 1
-        To derive the 'Days to Peak' field we first convert the 'date.entered' and 'date.peaked' fields to the datetime datatype.  Then we assign the day value of the difference between them to our new field:
-                ^
-    SyntaxError: invalid syntax
-
-
-
-
-```python
-
-```
-
-
-```python
-
-```
