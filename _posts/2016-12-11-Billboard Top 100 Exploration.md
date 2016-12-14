@@ -143,7 +143,7 @@ plt.show()
 ```
 
 
-![png](billboard%20post_files/billboard%20post_11_0.png)
+![png](https://github.com/wedelljd/wedelljd.github.io/blob/master/images/Days_to_Peak_Distplot.png)
 
 
 
