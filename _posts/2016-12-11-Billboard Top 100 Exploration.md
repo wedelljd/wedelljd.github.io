@@ -7,11 +7,17 @@ I recently looked into a dataset which lists all songs that made the Billboard T
 tracks each song from the date it entered up to 76 weeks afterwards (although no songs made it past 65 weeks).  
 
 The dataset is what I consider 'healthy'.  There are no missing values and the data doesn't appear corrupted in any way.  It does lack in metrics we want to use and explore, however, we are able to derive some of these datapoints from what we do have.  Fields I derived are:
+
     > Days to Peak
+
     > Peak Rank
+
     > Debut Month
+
     > Debut Quarter
+
     > Weeks in Top 100
+
         *To see an explanation to how I derived these datapoints see the footer*
 
 Using this data I've created some visualizations that show us hoe songs move through the Top 100 list over time and tell us when the most #1 hits debuted over the course of the year.  We'll also see how top rank relates to number of weeks in the top 100!
@@ -69,15 +75,10 @@ sns.distplot(top_10_billboard['days_to_peak'],bins=12, label="Peaked within Top 
 sns.distplot(top_51_thru_100['days_to_peak'], label="Peaked below Top 50",color='b')
 plt.xlabel("Days to Peak")
 plt.legend()
-plt.show()
-#plt.savefig('output.png', dpi=300)
 ```
 
 
-![png](billboard%20post_files/billboard%20post_6_0.png)
-
-
-The next thing we looked at was seasonality.  I was curious if there's an ideal time of year to debut on the list.  It turned out that in 2000 songs to reach the #1 spot on Billboard 100 debuted in the spring.
+The next thing I looked at was seasonality.  I was curious if there's an ideal time of year to debut on the list.  It turned out that in 2000 songs to reach the #1 spot on Billboard 100 debuted in the spring.
 
 
 ```python
@@ -88,23 +89,17 @@ sns.distplot(billboard["debut quarter"],color='blue',label = "All Songs")
 sns.distplot(reached_rank_1["debut quarter"],color='gold',label="Reached Rank #1")
 plt.xlabel("Debut Quarter")
 plt.legend()
-plt.show()
 
 
 sns.distplot(billboard["debut month"],color='blue',bins=12,label="All Songs")
 sns.distplot(reached_rank_1["debut month"],color='gold',bins=12,label="Reached Rank #1")
 plt.xlabel("Debut Month")
 plt.legend()
-plt.show()
-
 ```
+<img src="/images/Debut_Quarter_Distplot.png" class="fit image">
 
+<img src="/images/Debut_Month_Distplot.png" class="fit image">
 
-![png](https://github.com/wedelljd/wedelljd.github.io/blob/master/images/Days_to_Peak_Distplot.png)
-
-
-
-![png](billboard%20post_files/billboard%20post_8_1.png)
 
 
 While looking at songs which reached the #1 spot, let's look at what the journey to the top looks like.  Most have a steep climb to the top and then peter out.
@@ -123,16 +118,16 @@ plt.gca().invert_yaxis()
 plt.title("Song Rank by Week",fontsize=35)
 plt.ylabel("Rank",fontsize=30)
 plt.legend(bbox_to_anchor=(1, 1), loc=2, borderaxespad=0,fontsize=30)
-plt.show()
+
 ```
 
 
-![png](billboard%20post_files/billboard%20post_10_0.png)
+<img src="/images/Song_Rank_Over_Time.png" class="fit image">
 
 
-
+The last thing I looked at was whether a song's top rank and longevity on the list have anything to do with each other.  What I found was rather striking.  Almost every song that lasted more than 20 weeks on the Billboard Top 100 peaked in the Top 20 rank.  The vertical threshold at 20 weeks is simultaneously eye-opening, and alarming.  On one hand, this could be valuable for someone in the music industry, and on the other it could signal that our data is corrupted some how.  It would be interesting to see if the 20 week threshold is an anomaly for the year 2000, or if it is a consistent relationship.
 ```python
-#does a song's top rank influence it's longevity on the Top 100
+#does a song's top rank influence it's longevity on the Top 100?
 
 plt.scatter(y=billboard['peak_rank'],x=billboard['weeks in top 100'],color='r')
 plt.title("Peak Rank vs Weeks in Top 100")
