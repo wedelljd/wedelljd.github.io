@@ -143,7 +143,7 @@ plt.show()
 ```
 
 
-<img src="/images/Days_to_Peak_Distplot.png">
+<img src="/images/Days_to_Peak_Distplot.png" class="fit image">
 
 
 
