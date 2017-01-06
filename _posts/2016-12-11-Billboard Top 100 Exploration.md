@@ -20,7 +20,7 @@ The dataset is what I consider 'healthy'.  There are no missing values and the d
 
         *To see an explanation to how I derived these datapoints see the footer*
 
-Using this data I've created some visualizations that show us hoe songs move through the Top 100 list over time and tell us when the most #1 hits debuted over the course of the year.  We'll also see how top rank relates to number of weeks in the top 100!
+Using this data I've created some visualizations that show us how songs move through the Top 100 list over time and tell us when the most #1 hits debuted over the course of the year.  We'll also see how top rank relates to number of weeks in the top 100!
 
 
 ```python
