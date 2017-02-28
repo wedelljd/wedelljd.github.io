@@ -3,7 +3,7 @@ layout: post
 title: Meeting a Mate in Four Minutes
 ---
 
-# Meeting a Mate in Four Minutes
+Meeting a Mate in Four Minutes
 
 This project aims to draw conclusions from speed dating data collected at Columbia University and build a model to predict whether two participants will match.
 
