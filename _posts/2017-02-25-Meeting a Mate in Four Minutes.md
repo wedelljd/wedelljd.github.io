@@ -91,8 +91,8 @@ plt.xlabel('Date Sequence Number')
 plt.show()
 ```
 
-[!png]({{wedelljd.github.io}}/Meeting%20a%20Mate%20in%20Four%20Minutes_files/Meeting%20a%20Mate%20in%20Four%20Minutes_9_0.png)
-
+[!png](Meeting%20a%20Mate%20in%20Four%20Minutes_files/Meeting%20a%20Mate%20in%20Four%20Minutes_9_0.png)
+<img src="/images/fulls/Meeting%20a%20Mate%20in%20Four%20Minutes_files/Meeting%20a%20Mate%20in%20Four%20Minutes_9_0.png">
 ![png](Meeting%20a%20Mate%20in%20Four%20Minutes_files/Meeting%20a%20Mate%20in%20Four%20Minutes_12_0.png)
 
 ## Observed differences in attribute importance under limitations
