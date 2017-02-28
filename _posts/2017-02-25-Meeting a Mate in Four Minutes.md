@@ -90,7 +90,7 @@ plt.ylabel('Mean of Yes Decisions')
 plt.xlabel('Date Sequence Number')
 plt.show()
 ```
-<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_9_0.png", class="fit image">
+<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_9_0.png" class="fit image">
 
 ## Observed differences in attribute importance under limitations
 *See Appendix A for dataframe construction and manipulation
@@ -125,7 +125,7 @@ display(limited_female_dec_corrmat.head(1).iloc[:,1:])
 
 
 ![png](Meeting%20a%20Mate%20in%20Four%20Minutes_files/Meeting%20a%20Mate%20in%20Four%20Minutes_12_0.png)
-<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_12_0.png", class="fit image">
+<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_12_0.png" class="fit image">
 
 <div>
 <table border="1" class="dataframe">
@@ -151,7 +151,7 @@ display(limited_female_dec_corrmat.head(1).iloc[:,1:])
 
 
 ![png](Meeting%20a%20Mate%20in%20Four%20Minutes_files/Meeting%20a%20Mate%20in%20Four%20Minutes_12_2.png)
-<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_12_2.png", class="fit image">
+<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_12_2.png" class="fit image">
 
 
 <div>
@@ -201,7 +201,7 @@ display(limited_male_dec_corrmat.head(1).iloc[:,1:])
 
 
 ![png](Meeting%20a%20Mate%20in%20Four%20Minutes_files/Meeting%20a%20Mate%20in%20Four%20Minutes_15_0.png)
-<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_15_0.png", class="fit image">
+<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_15_0.png" class="fit image">
 
 
 <div>
@@ -228,7 +228,7 @@ display(limited_male_dec_corrmat.head(1).iloc[:,1:])
 
 
 ![png](Meeting%20a%20Mate%20in%20Four%20Minutes_files/Meeting%20a%20Mate%20in%20Four%20Minutes_15_2.png)
-<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_15_2.png", class="fit image">
+<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_15_2.png" class="fit image">
 
 
 <div>
@@ -562,7 +562,7 @@ plt.show()
 
 
 ![png](Meeting%20a%20Mate%20in%20Four%20Minutes_files/Meeting%20a%20Mate%20in%20Four%20Minutes_26_0.png)
-<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_26_0.png", class="fit image">
+<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_26_0.png" class="fit image">
 
 
 ```python
@@ -607,7 +607,7 @@ plt.show()
 
 
 ![png](Meeting%20a%20Mate%20in%20Four%20Minutes_files/Meeting%20a%20Mate%20in%20Four%20Minutes_27_1.png)
-<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_27_1.png", class="fit image">
+<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_27_1.png" class="fit image">
 
 
 ```python
@@ -652,7 +652,7 @@ plt.show()
 
 
 ![png](Meeting%20a%20Mate%20in%20Four%20Minutes_files/Meeting%20a%20Mate%20in%20Four%20Minutes_28_1.png)
-<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_28_1.png", class="fit image">
+<img src="/images/Meeting a Mate in Four Minutes_files/Meeting a Mate in Four Minutes_28_1.png" class="fit image">
 
 ## Appendix A
 
