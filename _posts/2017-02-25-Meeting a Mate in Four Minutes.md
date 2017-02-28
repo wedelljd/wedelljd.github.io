@@ -72,7 +72,7 @@ model.score(X_test,y_test)
 
 Before diving into the results found looking into the attributes of the participants, I wanted to establish whether simply the order of a date during the event would influence the participants' decisions.
 
-Related research on sequential decision-making from the University of Negev in Isreal shows that when judges are presiding in court they are far more lenient at the beginning of the day, and likewise after taking a break.
+Related research on sequential decision-making from the University of Negev in Israel shows that when judges are presiding in court they are far more lenient at the beginning of the day, and likewise after taking a break.
 
 "They found that at the beginning of a court session about 65 per cent of the rulings tended to be in favour of the prisoner, but the chance of a favourable ruling declined to near zero by the end of the session" - theglobeandmail.com
 
