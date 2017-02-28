@@ -94,7 +94,7 @@ plt.show()
 ```
 
 
-![png](Meeting%20a%20Mate%20in%20Four%20Minutes_files/Meeting%20a%20Mate%20in%20Four%20Minutes_9_0.png)
+<img src  = "images/Meeting%20a%20Mate%20in%20Four%20Minutes_files/Meeting%20a%20Mate%20in%20Four%20Minutes_9_0.png">
 
 
 ## Observed differences in attribute importance under limitations
