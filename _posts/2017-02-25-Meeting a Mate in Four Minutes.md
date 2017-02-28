@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Billboard 100 Exploration
+title: Meeting a Mate in Four Minutes
 ---
 
 # Meeting a Mate in Four Minutes
