@@ -7,11 +7,11 @@ title: Billboard 100 Exploration
 
 This project aims to draw conclusions from speed dating data collected at Columbia University and build a model to predict whether two participants will match.
 
-The dataset, sourced from Kaggle, comes as a single table.  I designed and created an SQLite database to segment the data into a more useful and malleable structure.  Using this database I explored the difference in correlatation with participants’ decisions to pursue a second date, whether placing limitations on how many match decisions were allowed affected males and females differently, how a participants number of matches vary with self-rated attractiveness and partner rated attractiveness and how 'yes' decisions trend with the sequential order of a date throughout the event.
+The dataset, sourced from Kaggle, comes as a single table.  I designed and created an SQLite database to segment the data into a more useful and malleable structure.  Using this database I explored the difference in correlation with participants’ decisions to pursue a second date, whether placing limitations on how many match decisions were allowed affected males and females differently, how a participants number of matches vary with self-rated attractiveness and partner rated attractiveness and how 'yes' decisions trend with the sequential order of a date throughout the event.
 
 ## Evaluating a Logistic Regression model against the baseline
 
-After creating the database I implemented a logistic regression model to pedict a participants' decision.  To test my model I first built a baseline model which randomly guessed whether a participant's partner would give a 'yes' decision.  Random guessing produces an accuracy 50%.
+After creating the database I implemented a logistic regression model to predict a participants' decision.  To test my model I first built a baseline model which randomly guessed whether a participant's partner would give a 'yes' decision.  Random guessing produces an accuracy 50%.
 
 
 ```python
