@@ -3,8 +3,6 @@ layout: post
 title: Meeting a Mate in Four Minutes
 ---
 
-Meeting a Mate in Four Minutes
-
 This project aims to draw conclusions from speed dating data collected at Columbia University and build a model to predict whether two participants will match.
 
 The dataset, sourced from Kaggle, comes as a single table.  I designed and created an SQLite database to segment the data into a more useful and malleable structure.  Using this database I explored the difference in correlation with participants’ decisions to pursue a second date, whether placing limitations on how many match decisions were allowed affected males and females differently, how a participants number of matches vary with self-rated attractiveness and partner rated attractiveness and how 'yes' decisions trend with the sequential order of a date throughout the event.
