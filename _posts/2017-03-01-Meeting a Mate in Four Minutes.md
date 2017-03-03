@@ -153,7 +153,7 @@ display(limited_female_dec_corrmat.head(1).iloc[:,1:])
   <thead>
     <tr style="text-align: center;">
       <th></th>
-      <th>F rating of partner attractiveness</th>
+      <th class="table_text">F rating of partner attractiveness</th>
       <th>F rating of partner intelligence</th>
       <th>F rating of partner fun</th>
       <th>F rating of shared interests</th>
