@@ -41,7 +41,7 @@ model.score(X_test,y_test)
 
 
 
-    Logistic Regression Accuracy: 0.83224489795918366
+    Logistic Regression Accuracy: 0.832
 
 
 
@@ -261,7 +261,7 @@ display(limited_male_dec_corrmat.head(1).iloc[:,1:])
 <div>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: center;">
       <th></th>
       <th>M rating of partner attractiveness</th>
       <th>M rating of partner intelligence</th>
@@ -310,8 +310,8 @@ self_rated_five_class_pivot
   <thead>
     <tr>
       <th>gender</th>
-      <th colspan="5" halign="left">0</th>
-      <th colspan="5" halign="left">1</th>
+      <th colspan="5" halign="center">0</th>
+      <th colspan="5" halign="center">1</th>
     </tr>
     <tr>
       <th>self_rated_class</th>
@@ -380,8 +380,8 @@ partner_rated_five_class_pivot
   <thead>
     <tr>
       <th>gender</th>
-      <th colspan="5" halign="left">0</th>
-      <th colspan="5" halign="left">1</th>
+      <th colspan="5" halign="center">0</th>
+      <th colspan="5" halign="center">1</th>
     </tr>
     <tr>
       <th>partner_rated_class</th>
@@ -706,7 +706,7 @@ partic_and_ratings
 <div>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: center;">
       <th></th>
       <th>iid</th>
       <th>goes_out_desc</th>
