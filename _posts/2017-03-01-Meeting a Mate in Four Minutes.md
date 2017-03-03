@@ -161,7 +161,7 @@ display(limited_female_dec_corrmat.head(1).iloc[:,1:])
   </thead>
   <tbody>
     <tr>
-      <th>Female Decision</th>
+      <th>Correlation with Female Decision</th>
       <td>0.45</td>
       <td>0.25</td>
       <td>0.41</td>
@@ -191,7 +191,7 @@ display(limited_female_dec_corrmat.head(1).iloc[:,1:])
   </thead>
   <tbody>
     <tr>
-      <th>Female Decision</th>
+      <th>Correlation with Female Decision</th>
       <td>0.41</td>
       <td>0.20</td>
       <td>0.44</td>
@@ -243,7 +243,7 @@ display(limited_male_dec_corrmat.head(1).iloc[:,1:])
   </thead>
   <tbody>
     <tr>
-      <th>Male Decision</th>
+      <th>Correlation with Male Decision</th>
       <td style="text-align: center;">0.49</td>
       <td>0.19</td>
       <td>0.36</td>
@@ -271,7 +271,7 @@ display(limited_male_dec_corrmat.head(1).iloc[:,1:])
   </thead>
   <tbody>
     <tr>
-      <th>Male Decision</th>
+      <th>Correlation with Male Decision</th>
       <td>0.54</td>
       <td>0.21</td>
       <td>0.45</td>
