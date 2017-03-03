@@ -261,7 +261,7 @@ display(limited_male_dec_corrmat.head(1).iloc[:,1:])
 <div>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: center;">
+    <tr">
       <th></th>
       <th>M rating of partner attractiveness</th>
       <th>M rating of partner intelligence</th>
