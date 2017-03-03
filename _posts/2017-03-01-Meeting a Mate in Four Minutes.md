@@ -149,7 +149,7 @@ display(limited_female_dec_corrmat.head(1).iloc[:,1:])
 
 
 <div>
-<table border="2" class="dataframe">
+<table border="4" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
