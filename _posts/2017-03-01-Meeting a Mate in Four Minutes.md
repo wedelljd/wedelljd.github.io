@@ -272,7 +272,7 @@ display(limited_male_dec_corrmat.head(1).iloc[:,1:])
   <tbody>
     <tr>
       <th>Correlation with Male Decision</th>
-      <td>0.54</td>
+      <td style="vertical-align: middle">0.54</td>
       <td>0.21</td>
       <td>0.45</td>
       <td>0.44</td>
