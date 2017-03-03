@@ -287,9 +287,14 @@ table, th, td, tr {
     border: 1px solid black;
     text-align: center;
     padding: 5px;
-    vertical-align: center;
 }
 
+table, td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    vertical-align:  middle;
+}
 
 .table_text {
   text-align: center;
