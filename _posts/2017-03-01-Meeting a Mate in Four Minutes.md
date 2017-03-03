@@ -261,7 +261,7 @@ display(limited_male_dec_corrmat.head(1).iloc[:,1:])
 <div>
 <table border="1" class="dataframe">
   <thead>
-    <tr">
+    <tr>
       <th></th>
       <th>M rating of partner attractiveness</th>
       <th>M rating of partner intelligence</th>
@@ -272,7 +272,7 @@ display(limited_male_dec_corrmat.head(1).iloc[:,1:])
   <tbody>
     <tr>
       <th>Correlation with Male Decision</th>
-      <td style="vertical-align: middle">0.54</td>
+      <td>0.54</td>
       <td>0.21</td>
       <td>0.45</td>
       <td>0.44</td>
