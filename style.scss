@@ -290,10 +290,10 @@ table, th, td, tr {
 }
 
 table, td, th {
-    border: 1px solid red;
+    border: 1px solid black;
+    vertical-align: middle;
     text-align: center;
     padding: 10px;
-    vertical-align: middle;
 }
 
 .table_text {
