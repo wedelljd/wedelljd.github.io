@@ -21,7 +21,7 @@ for i in range(len(speed_data)):
 print("Random Guess Accuracy: " + str(accuracy_score(speed_data['match'],random_match_predictions)))
 ```
 
-    Random Guess Accuracy: 0.495464311291
+    Random Guess Accuracy: 0.495
 
 
 It turns out that the decision made by a participant's partner could be predicted well above the baseline with just a single feature - how attractive the partner rated the participant.  Adding other features to this model only marginally increased performance, and in some cases detracted from the model's accuracy.  This simple logistic regression predicts matches with roughly 83% accuracy.
@@ -151,7 +151,7 @@ display(limited_female_dec_corrmat.head(1).iloc[:,1:])
 <div>
 <table border="4" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: center;">
       <th></th>
       <th>F rating of partner attractiveness</th>
       <th>F rating of partner intelligence</th>
@@ -181,7 +181,7 @@ display(limited_female_dec_corrmat.head(1).iloc[:,1:])
 <div>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: center;">
       <th></th>
       <th>F rating of partner attractiveness</th>
       <th>F rating of partner intelligence</th>
