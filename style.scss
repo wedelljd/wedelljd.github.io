@@ -289,6 +289,12 @@ table, th, td, tr {
     padding: 5px;
 }
 
+table, td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
 .table_text {
   text-align: center;
 }
