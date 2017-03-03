@@ -6,11 +6,11 @@ title: Meeting a Mate in Four Minutes
 
 This project aims to draw conclusions from speed dating data collected at Columbia University and build a model to predict whether two participants will match.
 
-The dataset, sourced from Kaggle, comes as a single table.  I designed and created an SQLite database to segment the data into a more useful and malleable structure.  Using this database I explored the difference in correlatation with participants’ decisions to pursue a second date, whether placing limitations on how many match decisions were allowed affected males and females differently, how a participants number of matches vary with self-rated attractiveness and partner rated attractiveness and how 'yes' decisions trend with the sequential order of a date throughout the event.
+The dataset, sourced from Kaggle, comes as a single table.  I designed and created an SQLite database to segment the data into a more useful and malleable structure.  Using this database I explored the difference in correlation with participants’ decisions to pursue a second date, whether placing limitations on how many match decisions were allowed affected males and females differently, how a participants number of matches vary with self-rated attractiveness and partner rated attractiveness and how 'yes' decisions trend with the sequential order of a date throughout the event.
 
 ## Evaluating a Logistic Regression model against the baseline
 
-After creating the database I implemented a logistic regression model to pedict a participants' decision.  To test my model I first built a baseline model which randomly guessed whether a participant's partner would give a 'yes' decision.  Random guessing produces an accuracy 50%.
+After creating the database I implemented a logistic regression model to predict a participants' decision.  To test my model I first built a baseline model which randomly guessed whether a participant's partner would give a 'yes' decision.  Random guessing produces an accuracy 50%.
 
 
 ```python
@@ -41,7 +41,7 @@ model.score(X_test,y_test)
 
 
 
-    0.83224489795918366
+    Logistic Regression Accuracy: 0.83224489795918366
 
 
 
@@ -49,7 +49,7 @@ model.score(X_test,y_test)
 
 Before diving into a deep analysis of what influences participants, I wanted to establish whether simply the order of a date during the event had an influence on their 'yes' decisions.
 
-Related research on sequential decision-making from the University of Negev in Isreal shows that when judges are presiding in court they are far more lenient at the beginning of the day, and likewise after taking a break.  The study observed 8 parole judges and included over 1000 rulings over the course of 50 Days.
+Related research on sequential decision-making from the University of Negev in Israel shows that when judges are presiding in court they are far more lenient at the beginning of the day, and likewise after taking a break.  The study observed 8 parole judges and included over 1000 rulings over the course of 50 Days.
 
 "They found that at the beginning of a court session about 65 percent of the rulings tended to be in favour of the prisoner, but the chance of a favourable ruling declined to near zero by the end of the session" - theglobeandmail.com
 
@@ -71,9 +71,9 @@ plt.show()
 
 
 
-The advandage of being someone's first date is apparent from this graph, however it is diffcult to conclude what effect the mid-event break is having, if any.  To explore this further I separarted dates into several buckets based on their order: first/last, immediately before the break, and immediately after the break.
+The advantage of being someone's first date is apparent from this graph, however it is difficult to conclude what effect the mid-event break is having, if any.  To explore this further I separated dates into several buckets based on their order: first/last, immediately before the break, and immediately after the break.
 
-Speed dating behavior turned out to be a bit different compared to parole rulings. As seen below it seems that a date immediately before the break is slighty more advantagous than immediately after.  The advantage to being someone's first or last date is also confirmed.
+Speed dating behavior turned out to be a bit different compared to parole rulings. As seen below it seems that a date immediately before the break is slightly more advantageous than immediately after.  The advantage to being someone's first or last date is also confirmed.
 
 
 ```python
@@ -149,7 +149,7 @@ display(limited_female_dec_corrmat.head(1).iloc[:,1:])
 
 
 <div>
-<table border="1" class="dataframe">
+<table border="2" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -162,10 +162,10 @@ display(limited_female_dec_corrmat.head(1).iloc[:,1:])
   <tbody>
     <tr>
       <th>Female Decision</th>
-      <td>0.451068</td>
-      <td>0.251687</td>
-      <td>0.419556</td>
-      <td>0.436017</td>
+      <td>0.45</td>
+      <td>0.25</td>
+      <td>0.41</td>
+      <td>0.43</td>
     </tr>
   </tbody>
 </table>
@@ -192,10 +192,10 @@ display(limited_female_dec_corrmat.head(1).iloc[:,1:])
   <tbody>
     <tr>
       <th>Female Decision</th>
-      <td>0.413603</td>
-      <td>0.200846</td>
-      <td>0.44293</td>
-      <td>0.421298</td>
+      <td>0.41</td>
+      <td>0.20</td>
+      <td>0.44</td>
+      <td>0.42</td>
     </tr>
   </tbody>
 </table>
@@ -204,7 +204,7 @@ display(limited_female_dec_corrmat.head(1).iloc[:,1:])
 
 ## Men's Inverse Reaction to Limitation
 
-The unexpected finding here was that men exhibited the exact opposite behavior when limiting their number of 'yes' decisions.  As their options became limited, they were more responsive to partners they percieved to be more attractive, intelligent and fun.  The greatest disparity in attribute correlation between limited and extensive choice is the jump in how men's rating of how fun they perceive their partner affected their 'yes' decisions.
+The unexpected finding here was that men exhibited the exact opposite behavior when limiting their number of 'yes' decisions.  As their options became limited, they were more responsive to partners they perceived to be more attractive, intelligent and fun.  The greatest disparity in attribute correlation between limited and extensive choice is the jump in how men's rating of how fun they perceive their partner affected their 'yes' decisions.
 
 
 ```python
@@ -244,10 +244,10 @@ display(limited_male_dec_corrmat.head(1).iloc[:,1:])
   <tbody>
     <tr>
       <th>Male Decision</th>
-      <td>0.495178</td>
-      <td>0.191948</td>
-      <td>0.366644</td>
-      <td>0.370566</td>
+      <td>0.49</td>
+      <td>0.19</td>
+      <td>0.36</td>
+      <td>0.37</td>
     </tr>
   </tbody>
 </table>
@@ -272,10 +272,10 @@ display(limited_male_dec_corrmat.head(1).iloc[:,1:])
   <tbody>
     <tr>
       <th>Male Decision</th>
-      <td>0.539649</td>
-      <td>0.213982</td>
-      <td>0.454562</td>
-      <td>0.444853</td>
+      <td>0.54</td>
+      <td>0.21</td>
+      <td>0.45</td>
+      <td>0.44</td>
     </tr>
   </tbody>
 </table>
@@ -284,7 +284,7 @@ display(limited_male_dec_corrmat.head(1).iloc[:,1:])
 
 ## Observed differences in match results based on self-rated attractiveness
 
-Since attractiveness seemed to be a rather accuate predictor of whether participants give a 'yes' decision, I wanted to explore the relationship between people's rating of their own attractiveness and the matches they receive.
+Since attractiveness seemed to be a rather accurate predictor of whether participants give a 'yes' decision, I wanted to explore the relationship between people's rating of their own attractiveness and the matches they receive.
 
 I grouped participants using KMeans clustering based on how highly they rated their own attractiveness the night of the event.  I performed the classification using both 5 and 8 clusters, with similar findings.  
 
@@ -292,7 +292,7 @@ The results for 5 clusters gave three groups who rate their attractiveness betwe
 
 On the aggregate those who rate themselves extremely high do in fact receive more matches than those who rate themselves extremely low in attractiveness, but not by much.  This begged a follow-up question, though. Do results for high self-rated attractive males differ from the same group of females?  This breakdown revealed a dramatic separation.
 
-Match results were much different when looking at these groups broken out by gender.  Men who rated themselves highly attractive did tend to do significantly better than their low self-rating couterparts.  The disparity is nearly 2 matches on average.  Even the next highest group receives almost a full match less.
+Match results were much different when looking at these groups broken out by gender.  Men who rated themselves highly attractive did tend to do significantly better than their low self-rating counterparts.  The disparity is nearly 2 matches on average.  Even the next highest group receives almost a full match less.
 
 The same breakdown for females, however, tells a much different story.  The difference in average number of matches between those who rated themselves highest versus those who rated themselves lowest was only 0.2.  Both groups receive roughly the same number of matches.  Even more profound is that the group rating themselves the highest don't even receive the most matches, in fact all the female groups that rate themselves more conservatively received more matches than those who rated themselves the highest!  Interesting.
 
@@ -330,29 +330,29 @@ self_rated_five_class_pivot
   <tbody>
     <tr>
       <th>number of matches</th>
-      <td>2.972117</td>
-      <td>2.410468</td>
-      <td>2.223684</td>
-      <td>2.501487</td>
-      <td>2.892996</td>
-      <td>2.985677</td>
-      <td>3.803625</td>
-      <td>2.018100</td>
-      <td>2.793905</td>
-      <td>2.026582</td>
+      <td>2.9</td>
+      <td>2.4</td>
+      <td>2.2</td>
+      <td>2.5</td>
+      <td>2.9</td>
+      <td>2.9</td>
+      <td>3.8</td>
+      <td>2.0</td>
+      <td>2.8</td>
+      <td>2.0</td>
     </tr>
     <tr>
       <th>self-rated attractiveness at sign-up</th>
-      <td>5.709759</td>
-      <td>9.179063</td>
-      <td>3.401316</td>
-      <td>7.000000</td>
-      <td>8.000000</td>
-      <td>5.623698</td>
-      <td>9.413897</td>
-      <td>3.574661</td>
-      <td>7.000000</td>
-      <td>8.000000</td>
+      <td>5.7</td>
+      <td>9.1</td>
+      <td>3.4</td>
+      <td>7.0</td>
+      <td>8.0</td>
+      <td>5.6</td>
+      <td>9.4</td>
+      <td>3.6</td>
+      <td>7.0</td>
+      <td>8.0</td>
     </tr>
   </tbody>
 </table>
@@ -364,7 +364,7 @@ self_rated_five_class_pivot
 
 The above results were rather striking, so I wanted to see if they would be repeated when grouping participants based on how their partners rated their attractiveness.  This time the clustering was performed based on the average attractiveness rating a participant received from their partners, not themselves.  The outcome supported the results of the earlier logistic regression.
 
-Using the parner's rating as the clustering feature participants, for both genders, who were rated as more attractive literally outmatch their peers, and in order nonetheless.  The disparity between number of matches, however, is far greater between highest vs lowest rated males than it is for the same groups in females
+Using the partner's rating as the clustering feature participants, for both genders, who were rated as more attractive literally outmatch their peers, and in order nonetheless.  The disparity between number of matches, however, is far greater between highest vs lowest rated males than it is for the same groups in females
 
 
 ```python
@@ -400,29 +400,29 @@ partner_rated_five_class_pivot
   <tbody>
     <tr>
       <th>number of matches</th>
-      <td>2.209770</td>
-      <td>1.365957</td>
-      <td>3.501220</td>
-      <td>1.727592</td>
-      <td>3.824666</td>
-      <td>3.127660</td>
-      <td>0.915563</td>
-      <td>3.434985</td>
-      <td>2.190972</td>
-      <td>4.877888</td>
+      <td>2.2</td>
+      <td>1.4</td>
+      <td>3.5</td>
+      <td>1.7</td>
+      <td>3.8</td>
+      <td>3.1</td>
+      <td>0.9</td>
+      <td>3.4</td>
+      <td>2.2</td>
+      <td>4.9</td>
     </tr>
     <tr>
       <th>avg_attractiveness_rating</th>
-      <td>6.156153</td>
-      <td>4.140736</td>
-      <td>7.035599</td>
-      <td>5.227267</td>
-      <td>7.886355</td>
-      <td>6.164608</td>
-      <td>4.117198</td>
-      <td>7.027031</td>
-      <td>5.230206</td>
-      <td>7.903055</td>
+      <td>6.2</td>
+      <td>4.1</td>
+      <td>7.0</td>
+      <td>5.2</td>
+      <td>7.9</td>
+      <td>6.2</td>
+      <td>4.1</td>
+      <td>7.0</td>
+      <td>5.2</td>
+      <td>7.9</td>
     </tr>
   </tbody>
 </table>
@@ -454,7 +454,7 @@ print(CV_rfc.best_score_)
 ```
 
     {'n_estimators': 50, 'max_depth': 20, 'max_features': 'sqrt'}
-    0.85175983436853
+    Random Forest Match Prediction Accuracy: 0.85
 
 
 The Random Forest model taking into account all attributes and a few other features about the date scored nearly 85.1%.  A marginal gain over the Logistic Regression at a significant cost increase in computing power and analyst effort.
@@ -527,7 +527,7 @@ plt.show()
 ```
 
     {'n_estimators': 500, 'max_features': 'auto', 'max_depth': 10}
-    0.7358178053830228
+    Random Forest Male Decision Prediction Accuracy: 0.736
 
 
 
@@ -574,7 +574,7 @@ plt.show()
 ```
 
     {'n_estimators': 100, 'max_features': 'sqrt', 'max_depth': 10}
-    0.7333333333333333
+    Random Forest Male Decision Prediction Accuracy: 0.733
 
 
 
@@ -588,6 +588,10 @@ In conclusion, it's neither surprising nor uplifting that the outcome of a four 
 However, this study suggests some interesting findings. Frist is that when going through a sequence of dates, it is far more likely that you match with those you meet early on.  Another is that decision factors vary when choices are restricted.  As a male limitations tend work in your favor if your counterparty doesn't find you all that attractive or fun because the bar has been lowered.  As a speed-dating female, however, you might find that having more competition actually works in your favor!
 
 It's been said many times that we're terrible judges of ourselves, and that sentiment is echoed in the world of speed-dating.  Given that performance in speed dating is based on matching, men seem to self-rank somewhat well where women do an abysmal job of it.
+
+
+
+
 
 ## Appendix A
 
