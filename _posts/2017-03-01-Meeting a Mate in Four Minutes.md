@@ -192,7 +192,7 @@ display(limited_female_dec_corrmat.head(1).iloc[:,1:])
   <tbody>
     <tr>
       <th>Female Decision</th>
-      <td style="text-align: center;">0.41</td>
+      <td>0.41</td>
       <td>0.20</td>
       <td>0.44</td>
       <td>0.42</td>
@@ -233,7 +233,7 @@ display(limited_male_dec_corrmat.head(1).iloc[:,1:])
 <div>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: center;">
+    <tr>
       <th></th>
       <th>M rating of partner attractiveness</th>
       <th>M rating of partner intelligence</th>
@@ -310,8 +310,8 @@ self_rated_five_class_pivot
   <thead>
     <tr>
       <th>gender</th>
-      <th colspan="5" halign="center">0</th>
-      <th colspan="5" halign="center">1</th>
+      <th colspan="5" halign="center">Female</th>
+      <th colspan="5" halign="center">Male</th>
     </tr>
     <tr>
       <th>self_rated_class</th>
@@ -380,8 +380,8 @@ partner_rated_five_class_pivot
   <thead>
     <tr>
       <th>gender</th>
-      <th colspan="5" halign="center">0</th>
-      <th colspan="5" halign="center">1</th>
+      <th colspan="5" halign="center">Female</th>
+      <th colspan="5" halign="center">Male</th>
     </tr>
     <tr>
       <th>partner_rated_class</th>
