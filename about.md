@@ -4,7 +4,11 @@ title: About
 permalink: /about/
 ---
 
-I'm here to show you some awesome things with data and machine learning
+I've worked with data in some capacity throughout my professional career and practicing data science is an opportunity for me to expand my skill set.  I started this blog as a way to present my work for a 3-month Data Science program through General Assembly and continue to post my on-going projects.
+
+I'm familiar with many Machine Learning techniques and have a command Python, notable libraries including: sci-kit learn, pandas and numpy.
+
+Enjoy.
 
 ### More Information
 
