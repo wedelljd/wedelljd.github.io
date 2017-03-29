@@ -1,10 +1,12 @@
-
-# Predicting Data Scientist Salaries Using Logistic Regression
+---
+layout: post
+title: Predicting Data Scientist Salaries Using Logistic Regression
+---
 
 This project began as a web scraping exercise for our Data Science Immersive course which turned into a project in which we use Logistic Regression to predict whether a Data Science job listing in Boston will pay over $90,000.
 
 The class brainstormed what predictors might be useful for a model and decided on four:
-    
+
     - Years of experience
     - Whether the term 'scientist' is in the job title
     - Whether the term 'start-up' appears in the job description
@@ -34,7 +36,7 @@ To determine how well our model is performing I will need to compare how it does
 
 Guessing gives an accuracy of 51.9%.  Almost a perfect 50/50.
 
-I also want to see how accurate taking the assumption that every job is listed over 90K, or that every job is listed under 90K is: 
+I also want to see how accurate taking the assumption that every job is listed over 90K, or that every job is listed under 90K is:
 
     All jobs are over90K: 53.9% accuracy
     All jobs are under90K: 46.1% accuracy
@@ -58,7 +60,7 @@ print("All Under90K: {0:.2%}".format(accuracy_score(y, all_under_90K)))
     Random Guess: 51.88%
     All Over90K: 53.90%
     All Under90K: 46.10%
-    
+
 
 ## Making a Logistic RegressionCV Model
 
@@ -81,7 +83,7 @@ X = df[[
     ]]
 y = df.over_90k
 
-model = LogisticRegressionCV(cv=3) 
+model = LogisticRegressionCV(cv=3)
 model.fit(X, y) # This trains the model using 3 cross validated sets from the data
 
 for metric in ['accuracy', 'precision', 'recall', 'roc_auc']:
@@ -93,7 +95,7 @@ for metric in ['accuracy', 'precision', 'recall', 'roc_auc']:
     mean precision: 0.6269932389335374, all: [ 0.64102564  0.70149254  0.53846154]
     mean recall: 0.6368159203980099, all: [ 0.55970149  0.35074627  1.        ]
     mean roc_auc: 0.6059093151666236, all: [ 0.62255029  0.53698612  0.65819153]
-    
+
 
 ### Model Accuracy: 56.7%
 
@@ -315,5 +317,3 @@ examine_coefficients(model, X)
   </tbody>
 </table>
 </div>
-
-
