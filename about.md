@@ -10,8 +10,6 @@ I'm familiar with many Machine Learning techniques and have a command Python, no
 
 Enjoy.
 
-### More Information
-
 ### Contact me
 p: 203-918-8484
 
