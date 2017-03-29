@@ -38,8 +38,8 @@ Guessing gives an accuracy of 51.9%.  Almost a perfect 50/50.
 
 I also want to see how accurate taking the assumption that every job is listed over 90K, or that every job is listed under 90K is:
 
-- All jobs are over90K: 53.9% accuracy
-- All jobs are under90K: 46.1% accuracy
+- All jobs are over 90K: 53.9% accuracy
+- All jobs are under 90K: 46.1% accuracy
 
 
 ```python
@@ -56,7 +56,7 @@ print("All Over90K: {0:.2%}".format(accuracy_score(y, all_over_90K)))
 print("All Under90K: {0:.2%}".format(accuracy_score(y, all_under_90K)))
 #{percent:.2%}'.format(percent=1.0/3.0)
 ```
-
+### Baseline Accuracies:
 - Random Guess: 51.88%
 - All Over90K: 53.90%
 - All Under90K: 46.10%
