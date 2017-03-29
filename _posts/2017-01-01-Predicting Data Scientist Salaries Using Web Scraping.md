@@ -34,13 +34,7 @@ from sklearn.cross_validation import cross_val_score
 
 To determine how well our model is performing I will need to compare how it does vs a random guess whether a job listing pays over 90K.
 
-Guessing gives an accuracy of 51.9%.  Almost a perfect 50/50.
-
 I also want to see how accurate taking the assumption that every job is listed over 90K, or that every job is listed under 90K is:
-
-- All jobs are over 90K: 53.9% accuracy
-- All jobs are under 90K: 46.1% accuracy
-
 
 ```python
 random_guess = []
