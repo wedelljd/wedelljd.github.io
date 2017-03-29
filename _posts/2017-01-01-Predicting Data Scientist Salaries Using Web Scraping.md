@@ -7,10 +7,10 @@ This project began as a web scraping exercise for our Data Science Immersive cou
 
 The class brainstormed what predictors might be useful for a model and decided on four:
 
-    - Years of experience
-    - Whether the term 'scientist' is in the job title
-    - Whether the term 'start-up' appears in the job description
-    - Whether the term 'Phd' appears in the job description
+- Years of experience
+- Whether the term 'scientist' is in the job title
+- Whether the term 'start-up' appears in the job description
+- Whether the term 'Phd' appears in the job description
 
 The class split into teams to perform the web scraping, each team responsible for one of the four features.  Once the data was gathered we individually cleaned and merged the data and built models to attempt to predict whether listings had a salary of over $90K.
 
@@ -38,8 +38,8 @@ Guessing gives an accuracy of 51.9%.  Almost a perfect 50/50.
 
 I also want to see how accurate taking the assumption that every job is listed over 90K, or that every job is listed under 90K is:
 
-    All jobs are over90K: 53.9% accuracy
-    All jobs are under90K: 46.1% accuracy
+All jobs are over90K: 53.9% accuracy
+All jobs are under90K: 46.1% accuracy
 
 
 ```python
